@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A01E65012157DB6500BFC653 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01E65002157DB6500BFC653 /* HealthKit.framework */; };
+		A04011F221569921006475C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04011F121569921006475C0 /* AppDelegate.swift */; };
+		A04011F421569921006475C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04011F321569921006475C0 /* ViewController.swift */; };
+		A04011F721569921006475C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04011F521569921006475C0 /* Main.storyboard */; };
+		A04011F921569922006475C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04011F821569922006475C0 /* Assets.xcassets */; };
+		A04011FC21569922006475C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04011FA21569922006475C0 /* LaunchScreen.storyboard */; };
+		A0BF2D542157DFD50021EEE3 /* ResearchUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BF2D4F2157DE880021EEE3 /* ResearchUI.framework */; };
+		A0BF2D552157DFD50021EEE3 /* ResearchUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0BF2D4F2157DE880021EEE3 /* ResearchUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0BF2D592157DFE00021EEE3 /* Research.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BF2D3C2157DE7D0021EEE3 /* Research.framework */; };
+		A0BF2D5A2157DFE00021EEE3 /* Research.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0BF2D3C2157DE7D0021EEE3 /* Research.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0BF2D5D2157E0070021EEE3 /* BridgeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BF2D282157DE610021EEE3 /* BridgeSDK.framework */; };
+		A0BF2D5E2157E0070021EEE3 /* BridgeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0BF2D282157DE610021EEE3 /* BridgeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0BF2D612157E01C0021EEE3 /* BridgeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BF2D122157DE480021EEE3 /* BridgeApp.framework */; };
+		A0BF2D622157E01C0021EEE3 /* BridgeApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0BF2D122157DE480021EEE3 /* BridgeApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0BF2D662157E1BE0021EEE3 /* BridgeInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0BF2D652157E1BD0021EEE3 /* BridgeInfo.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0BF2D112157DE480021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D052157DE480021EEE3 /* BridgeApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F83B44A52032467D002825AE;
+			remoteInfo = "BridgeApp (iOS)";
+		};
+		A0BF2D132157DE480021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D052157DE480021EEE3 /* BridgeApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F83B44AE2032467D002825AE;
+			remoteInfo = BridgeAppTests;
+		};
+		A0BF2D152157DE480021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D052157DE480021EEE3 /* BridgeApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F83B450220324A33002825AE;
+			remoteInfo = BridgeAppExample;
+		};
+		A0BF2D272157DE610021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D172157DE600021EEE3 /* BridgeSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80855F5019BE258C006601C7;
+			remoteInfo = BridgeSDK;
+		};
+		A0BF2D292157DE610021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D172157DE600021EEE3 /* BridgeSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80855F5B19BE258C006601C7;
+			remoteInfo = BridgeSDKTests;
+		};
+		A0BF2D2B2157DE610021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D172157DE600021EEE3 /* BridgeSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 807AE2871B603309002588BB;
+			remoteInfo = BridgeSDKIntegration;
+		};
+		A0BF2D2D2157DE610021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D172157DE600021EEE3 /* BridgeSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 807AE29F1B60330C002588BB;
+			remoteInfo = BridgeSDKIntegrationTests;
+		};
+		A0BF2D2F2157DE610021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D172157DE600021EEE3 /* BridgeSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F81BE77820B4951F00EE57D3;
+			remoteInfo = "BridgeSDK-Test";
+		};
+		A0BF2D3B2157DE7D0021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D312157DE7D0021EEE3 /* Research.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF8B53141FCE678E006B6937;
+			remoteInfo = "Research (iOS)";
+		};
+		A0BF2D3D2157DE7D0021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D312157DE7D0021EEE3 /* Research.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF8B53301FCE67AA006B6937;
+			remoteInfo = "Research (watchOS)";
+		};
+		A0BF2D3F2157DE7D0021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D312157DE7D0021EEE3 /* Research.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF8B533D1FCE67C7006B6937;
+			remoteInfo = "Research (tvOS)";
+		};
+		A0BF2D412157DE7D0021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D312157DE7D0021EEE3 /* Research.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8BE123521370931000AAB1E;
+			remoteInfo = "Research (macOS)";
+		};
+		A0BF2D432157DE7D0021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D312157DE7D0021EEE3 /* Research.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF8B531C1FCE678E006B6937;
+			remoteInfo = ResearchTests_iOS;
+		};
+		A0BF2D452157DE7D0021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D312157DE7D0021EEE3 /* Research.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F875575620807E2300235078;
+			remoteInfo = "Research-UnitTest";
+		};
+		A0BF2D4E2157DE880021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D472157DE880021EEE3 /* ResearchUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFF2D9381FCF415E007258F8;
+			remoteInfo = "ResearchUI (iOS)";
+		};
+		A0BF2D502157DE880021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D472157DE880021EEE3 /* ResearchUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFF2D9401FCF415E007258F8;
+			remoteInfo = ResearchUITests_iOS;
+		};
+		A0BF2D522157DE880021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D472157DE880021EEE3 /* ResearchUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFF2D9701FCF41BF007258F8;
+			remoteInfo = "ResearchUI (watchOS)";
+		};
+		A0BF2D562157DFD50021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D472157DE880021EEE3 /* ResearchUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FFF2D9371FCF415E007258F8;
+			remoteInfo = "ResearchUI (iOS)";
+		};
+		A0BF2D5B2157DFE00021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D312157DE7D0021EEE3 /* Research.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8B53131FCE678E006B6937;
+			remoteInfo = "Research (iOS)";
+		};
+		A0BF2D5F2157E0070021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D172157DE600021EEE3 /* BridgeSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 80855F4F19BE258C006601C7;
+			remoteInfo = BridgeSDK;
+		};
+		A0BF2D632157E01C0021EEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0BF2D052157DE480021EEE3 /* BridgeApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F83B44A42032467D002825AE;
+			remoteInfo = "BridgeApp (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0BF2D582157DFD60021EEE3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A0BF2D552157DFD50021EEE3 /* ResearchUI.framework in Embed Frameworks */,
+				A0BF2D622157E01C0021EEE3 /* BridgeApp.framework in Embed Frameworks */,
+				A0BF2D5A2157DFE00021EEE3 /* Research.framework in Embed Frameworks */,
+				A0BF2D5E2157E0070021EEE3 /* BridgeSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A01E64FE2157DB2600BFC653 /* Sample2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sample2.entitlements; sourceTree = "<group>"; };
+		A01E65002157DB6500BFC653 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		A04011EE21569921006475C0 /* Sample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04011F121569921006475C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A04011F321569921006475C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A04011F621569921006475C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A04011F821569922006475C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A04011FB21569922006475C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A04011FD21569922006475C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0BF2D052157DE480021EEE3 /* BridgeApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BridgeApp.xcodeproj; path = "BridgeApp-Apple-SDK/BridgeApp/BridgeApp.xcodeproj"; sourceTree = "<group>"; };
+		A0BF2D172157DE600021EEE3 /* BridgeSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BridgeSDK.xcodeproj; path = "BridgeApp-Apple-SDK/Bridge-iOS-SDK/BridgeSDK.xcodeproj"; sourceTree = "<group>"; };
+		A0BF2D312157DE7D0021EEE3 /* Research.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Research.xcodeproj; path = "BridgeApp-Apple-SDK/SageResearch/Research/Research.xcodeproj"; sourceTree = "<group>"; };
+		A0BF2D472157DE880021EEE3 /* ResearchUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchUI.xcodeproj; path = "BridgeApp-Apple-SDK/SageResearch/ResearchUI/ResearchUI.xcodeproj"; sourceTree = "<group>"; };
+		A0BF2D652157E1BD0021EEE3 /* BridgeInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BridgeInfo.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A04011EB21569921006475C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BF2D612157E01C0021EEE3 /* BridgeApp.framework in Frameworks */,
+				A01E65012157DB6500BFC653 /* HealthKit.framework in Frameworks */,
+				A0BF2D592157DFE00021EEE3 /* Research.framework in Frameworks */,
+				A0BF2D5D2157E0070021EEE3 /* BridgeSDK.framework in Frameworks */,
+				A0BF2D542157DFD50021EEE3 /* ResearchUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A01E64FF2157DB6500BFC653 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0BF2D472157DE880021EEE3 /* ResearchUI.xcodeproj */,
+				A0BF2D312157DE7D0021EEE3 /* Research.xcodeproj */,
+				A0BF2D172157DE600021EEE3 /* BridgeSDK.xcodeproj */,
+				A0BF2D052157DE480021EEE3 /* BridgeApp.xcodeproj */,
+				A01E65002157DB6500BFC653 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A04011E521569921006475C0 = {
+			isa = PBXGroup;
+			children = (
+				A04011F021569921006475C0 /* Sample2 */,
+				A04011EF21569921006475C0 /* Products */,
+				A01E64FF2157DB6500BFC653 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A04011EF21569921006475C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A04011EE21569921006475C0 /* Sample2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A04011F021569921006475C0 /* Sample2 */ = {
+			isa = PBXGroup;
+			children = (
+				A0BF2D652157E1BD0021EEE3 /* BridgeInfo.plist */,
+				A01E64FE2157DB2600BFC653 /* Sample2.entitlements */,
+				A04011F121569921006475C0 /* AppDelegate.swift */,
+				A04011F321569921006475C0 /* ViewController.swift */,
+				A04011F521569921006475C0 /* Main.storyboard */,
+				A04011F821569922006475C0 /* Assets.xcassets */,
+				A04011FA21569922006475C0 /* LaunchScreen.storyboard */,
+				A04011FD21569922006475C0 /* Info.plist */,
+			);
+			path = Sample2;
+			sourceTree = "<group>";
+		};
+		A0BF2D062157DE480021EEE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0BF2D122157DE480021EEE3 /* BridgeApp.framework */,
+				A0BF2D142157DE480021EEE3 /* BridgeAppTests.xctest */,
+				A0BF2D162157DE480021EEE3 /* BridgeAppExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0BF2D182157DE600021EEE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0BF2D282157DE610021EEE3 /* BridgeSDK.framework */,
+				A0BF2D2A2157DE610021EEE3 /* BridgeSDKTests.xctest */,
+				A0BF2D2C2157DE610021EEE3 /* BridgeSDKIntegration.app */,
+				A0BF2D2E2157DE610021EEE3 /* BridgeSDKIntegrationTests.xctest */,
+				A0BF2D302157DE610021EEE3 /* BridgeSDK_Test.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0BF2D322157DE7D0021EEE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0BF2D3C2157DE7D0021EEE3 /* Research.framework */,
+				A0BF2D3E2157DE7D0021EEE3 /* Research.framework */,
+				A0BF2D402157DE7D0021EEE3 /* Research.framework */,
+				A0BF2D422157DE7D0021EEE3 /* Research.framework */,
+				A0BF2D442157DE7D0021EEE3 /* ResearchTests_iOS.xctest */,
+				A0BF2D462157DE7D0021EEE3 /* Research_UnitTest.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0BF2D482157DE880021EEE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0BF2D4F2157DE880021EEE3 /* ResearchUI.framework */,
+				A0BF2D512157DE880021EEE3 /* ResearchUITests_iOS.xctest */,
+				A0BF2D532157DE880021EEE3 /* ResearchUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A04011ED21569921006475C0 /* Sample2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A040120021569922006475C0 /* Build configuration list for PBXNativeTarget "Sample2" */;
+			buildPhases = (
+				A04011EA21569921006475C0 /* Sources */,
+				A04011EB21569921006475C0 /* Frameworks */,
+				A04011EC21569921006475C0 /* Resources */,
+				A0BF2D582157DFD60021EEE3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0BF2D572157DFD50021EEE3 /* PBXTargetDependency */,
+				A0BF2D5C2157DFE00021EEE3 /* PBXTargetDependency */,
+				A0BF2D602157E0070021EEE3 /* PBXTargetDependency */,
+				A0BF2D642157E01C0021EEE3 /* PBXTargetDependency */,
+			);
+			name = Sample2;
+			productName = Sample2;
+			productReference = A04011EE21569921006475C0 /* Sample2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A04011E621569921006475C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = mss;
+				TargetAttributes = {
+					A04011ED21569921006475C0 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A04011E921569921006475C0 /* Build configuration list for PBXProject "Sample2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A04011E521569921006475C0;
+			productRefGroup = A04011EF21569921006475C0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A0BF2D062157DE480021EEE3 /* Products */;
+					ProjectRef = A0BF2D052157DE480021EEE3 /* BridgeApp.xcodeproj */;
+				},
+				{
+					ProductGroup = A0BF2D182157DE600021EEE3 /* Products */;
+					ProjectRef = A0BF2D172157DE600021EEE3 /* BridgeSDK.xcodeproj */;
+				},
+				{
+					ProductGroup = A0BF2D322157DE7D0021EEE3 /* Products */;
+					ProjectRef = A0BF2D312157DE7D0021EEE3 /* Research.xcodeproj */;
+				},
+				{
+					ProductGroup = A0BF2D482157DE880021EEE3 /* Products */;
+					ProjectRef = A0BF2D472157DE880021EEE3 /* ResearchUI.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A04011ED21569921006475C0 /* Sample2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A0BF2D122157DE480021EEE3 /* BridgeApp.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BridgeApp.framework;
+			remoteRef = A0BF2D112157DE480021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D142157DE480021EEE3 /* BridgeAppTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BridgeAppTests.xctest;
+			remoteRef = A0BF2D132157DE480021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D162157DE480021EEE3 /* BridgeAppExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = BridgeAppExample.app;
+			remoteRef = A0BF2D152157DE480021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D282157DE610021EEE3 /* BridgeSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BridgeSDK.framework;
+			remoteRef = A0BF2D272157DE610021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D2A2157DE610021EEE3 /* BridgeSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BridgeSDKTests.xctest;
+			remoteRef = A0BF2D292157DE610021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D2C2157DE610021EEE3 /* BridgeSDKIntegration.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = BridgeSDKIntegration.app;
+			remoteRef = A0BF2D2B2157DE610021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D2E2157DE610021EEE3 /* BridgeSDKIntegrationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BridgeSDKIntegrationTests.xctest;
+			remoteRef = A0BF2D2D2157DE610021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D302157DE610021EEE3 /* BridgeSDK_Test.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BridgeSDK_Test.framework;
+			remoteRef = A0BF2D2F2157DE610021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D3C2157DE7D0021EEE3 /* Research.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Research.framework;
+			remoteRef = A0BF2D3B2157DE7D0021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D3E2157DE7D0021EEE3 /* Research.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Research.framework;
+			remoteRef = A0BF2D3D2157DE7D0021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D402157DE7D0021EEE3 /* Research.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Research.framework;
+			remoteRef = A0BF2D3F2157DE7D0021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D422157DE7D0021EEE3 /* Research.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Research.framework;
+			remoteRef = A0BF2D412157DE7D0021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D442157DE7D0021EEE3 /* ResearchTests_iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchTests_iOS.xctest;
+			remoteRef = A0BF2D432157DE7D0021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D462157DE7D0021EEE3 /* Research_UnitTest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Research_UnitTest.framework;
+			remoteRef = A0BF2D452157DE7D0021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D4F2157DE880021EEE3 /* ResearchUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchUI.framework;
+			remoteRef = A0BF2D4E2157DE880021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D512157DE880021EEE3 /* ResearchUITests_iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchUITests_iOS.xctest;
+			remoteRef = A0BF2D502157DE880021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0BF2D532157DE880021EEE3 /* ResearchUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchUI.framework;
+			remoteRef = A0BF2D522157DE880021EEE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A04011EC21569921006475C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04011FC21569922006475C0 /* LaunchScreen.storyboard in Resources */,
+				A04011F921569922006475C0 /* Assets.xcassets in Resources */,
+				A04011F721569921006475C0 /* Main.storyboard in Resources */,
+				A0BF2D662157E1BE0021EEE3 /* BridgeInfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A04011EA21569921006475C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04011F421569921006475C0 /* ViewController.swift in Sources */,
+				A04011F221569921006475C0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0BF2D572157DFD50021EEE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ResearchUI (iOS)";
+			targetProxy = A0BF2D562157DFD50021EEE3 /* PBXContainerItemProxy */;
+		};
+		A0BF2D5C2157DFE00021EEE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Research (iOS)";
+			targetProxy = A0BF2D5B2157DFE00021EEE3 /* PBXContainerItemProxy */;
+		};
+		A0BF2D602157E0070021EEE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BridgeSDK;
+			targetProxy = A0BF2D5F2157E0070021EEE3 /* PBXContainerItemProxy */;
+		};
+		A0BF2D642157E01C0021EEE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BridgeApp (iOS)";
+			targetProxy = A0BF2D632157E01C0021EEE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A04011F521569921006475C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A04011F621569921006475C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A04011FA21569922006475C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A04011FB21569922006475C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A04011FE21569922006475C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A04011FF21569922006475C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A040120121569922006475C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sample2/Sample2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXKKPUD3QZ;
+				INFOPLIST_FILE = Sample2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.mss.www.Sample2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A040120221569922006475C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sample2/Sample2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXKKPUD3QZ;
+				INFOPLIST_FILE = Sample2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.mss.www.Sample2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A04011E921569921006475C0 /* Build configuration list for PBXProject "Sample2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04011FE21569922006475C0 /* Debug */,
+				A04011FF21569922006475C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A040120021569922006475C0 /* Build configuration list for PBXNativeTarget "Sample2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A040120121569922006475C0 /* Debug */,
+				A040120221569922006475C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A04011E621569921006475C0 /* Project object */;
+}
