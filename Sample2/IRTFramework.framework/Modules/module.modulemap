@@ -1,0 +1,6 @@
+framework module IRTFramework {
+  umbrella header "IRTFramework.h"
+
+  export *
+  module * { export * }
+}
