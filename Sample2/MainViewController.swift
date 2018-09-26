@@ -45,7 +45,21 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let schedule = self.scheduleManager.scheduledActivities[indexPath.row]
-        print("\(schedule.activityIdentifier ?? "")")
+        guard let taskIdentifier = schedule.activityIdentifier else {
+            return
+        }
+        
+        if (taskIdentifier == "Example_List") {
+            let taskViewModel = self.scheduleManager.instantiateTaskViewModel(for: schedule)
+            let viewController = RSDTaskViewController(taskViewModel: taskViewModel)
+            viewController.delegate = self
+            self.present(viewController, animated: true, completion: nil)
+        }
+        else {
+            //bring up PRO
+        }
+        
+        print("\(taskIdentifier)")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -70,14 +84,30 @@ extension MainViewController: PROViewControllerDelegate {
         }
         
         let irtResult = IRTResult(identifier: taskIdentifier, engine: engine)
-        let navigator = RSDConditionalStepNavigatorObject(with: [])
-        let task = RSDTaskObject(identifier: taskIdentifier, stepNavigator: navigator)
-        let taskViewModel = RSDTaskViewModel(task: task)
-        taskViewModel.taskResult.appendAsyncResult(with: irtResult)
-        taskViewModel.scheduleIdentifier = self.scheduleManager.scheduledActivities[indexPath.row].guid
+//        let navigator = RSDConditionalStepNavigatorObject(with: [])
+//        let task = RSDTaskObject(identifier: taskIdentifier, stepNavigator: navigator)
+        var taskResult = RSDTaskResultObject(identifier: taskIdentifier)
+        taskResult.appendAsyncResult(with: irtResult)
+        let taskResultContainer = RSDTaskState(taskResult: taskResult)
+        taskResultContainer.scheduleIdentifier = self.scheduleManager.scheduledActivities[indexPath.row].guid
         
-        self.scheduleManager.saveResults(from: taskViewModel)
+        self.scheduleManager.archiveAndUpload(taskResultContainer)
     }
+    
+}
+
+extension MainViewController: RSDTaskViewControllerDelegate {
+    func taskController(_ taskController: RSDTaskController, didFinishWith reason: RSDTaskFinishReason, error: Error?) {
+        self.presentedViewController?.dismiss(animated: true, completion: {
+            self.scheduleManager.taskController(taskController, didFinishWith: reason, error: error)
+        })
+        
+    }
+    
+    func taskController(_ taskController: RSDTaskController, readyToSave taskViewModel: RSDTaskViewModel) {
+        self.scheduleManager.taskController(taskController, readyToSave: taskViewModel)
+    }
+    
     
 }
 

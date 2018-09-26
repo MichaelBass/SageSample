@@ -88,6 +88,7 @@ class ExternalIDRegistrationViewController: RSDTableStepViewController {
         signUp.checkForConsent = true
         signUp.externalId = externalId
         signUp.password = externalId
+        signUp.sharingScope = "all_qualified_researchers"
         
         signUp.dataGroups = ["test_user"]
         

@@ -38,6 +38,10 @@ import BridgeSDK
 @UIApplicationMain
 class AppDelegate: SBAAppDelegate, RSDTaskViewControllerDelegate {
     
+    override func instantiateFactory() -> RSDFactory {
+        return ExampleFactory()
+    }
+    
     func showAppropriateViewController(animated: Bool) {
         if BridgeSDK.authManager.isAuthenticated() {
             showMainViewController(animated: animated)

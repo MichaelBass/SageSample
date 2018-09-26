@@ -1,0 +1,96 @@
+{
+    "identifier": "Example_List",
+    "type" : "example",
+    "steps": [
+        {
+            "identifier": "step1",
+            "type": "form",
+            "title": "Step one",
+            "text": "Select a single option",
+            "inputFields" : [{
+                "uiHint": "list",
+                "identifier" : "step1",
+                "type": "singleChoice.integer",
+                "choices": [
+                    {"text":"Alfa", "value":0},
+                    {"text":"Bravo", "value":1},
+                    {"text":"Charlie", "value":2},
+                    {"text":"Delta", "value":3},
+                    {"text":"Echo", "value":4}],
+                "optional": true
+            }]
+        },
+        {
+            "identifier": "step2",
+            "type": "form",
+            "title": "Step 2",
+            "text": "Select a single option",
+            "inputFields" : [{
+                "uiHint": "list",
+                "type": "singleChoice.integer",
+                "choices": [
+                    {"text":"Alfa", "value":0},
+                    {"text":"Bravo", "value":1},
+                    {"text":"Charlie", "value":2},
+                    {"text":"Delta", "value":3},
+                {"text":"Echo", "value":4}],
+                "optional": true
+            }]
+        },
+        {
+            "identifier": "step3",
+            "type": "form",
+            "title": "step three",
+            "text": "Select a single option",
+            "inputFields" : [{
+                "uiHint": "list",
+                "type": "singleChoice.integer",
+                "choices": [
+                    {"text":"Alfa", "value":0},
+                    {"text":"Bravo", "value":1},
+                    {"text":"Charlie", "value":2},
+                    {"text":"Delta", "value":3},
+                {"text":"Echo", "value":4}],
+                "optional": true
+            }]
+        },
+        {
+            "identifier": "step4",
+            "type": "form",
+            "title": "step fore",
+            "text": "Select a single option",
+            "inputFields" : [{
+                "uiHint": "list",
+                "type": "singleChoice.integer",
+                "choices": [
+                    {"text":"Alfa", "value":0},
+                    {"text":"Bravo", "value":1},
+                    {"text":"Charlie", "value":2},
+                    {"text":"Delta", "value":3},
+                {"text":"Echo", "value":4}],
+                "optional": true
+            }]
+        },
+        {
+            "identifier": "step5",
+            "type": "form",
+            "title": "Step five",
+            "text": "Select a single option",
+            "inputFields" : [{
+                "uiHint": "list",
+                "type": "singleChoice.integer",
+                "choices": [
+                    {"text":"Alfa", "value":0},
+                    {"text":"Bravo", "value":1},
+                    {"text":"Charlie", "value":2},
+                    {"text":"Delta", "value":3},
+                {"text":"Echo", "value":4}],
+                "optional": true
+            }]
+        }
+
+
+
+
+    ]
+}

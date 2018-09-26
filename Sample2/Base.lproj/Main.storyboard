@@ -37,9 +37,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Rmj-xc-aWf" kind="presentation" id="lpA-EX-dxq"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -88,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSQ-FQ-83U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="97"/>
+            <point key="canvasLocation" x="1953" y="-138"/>
         </scene>
     </scenes>
 </document>

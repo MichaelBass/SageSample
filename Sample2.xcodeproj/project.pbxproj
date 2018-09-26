@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0019D9F215AD37700BE6F9C /* IRTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0019D87215AD37700BE6F9C /* IRTFramework.framework */; };
+		A0019DA0215AD38900BE6F9C /* IRTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0019D87215AD37700BE6F9C /* IRTFramework.framework */; };
+		A0019DA1215AD38900BE6F9C /* IRTFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0019D87215AD37700BE6F9C /* IRTFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0019DA3215AD43F00BE6F9C /* Content in Resources */ = {isa = PBXBuildFile; fileRef = A0019DA2215AD43F00BE6F9C /* Content */; };
+		A0019DA5215ADFCE00BE6F9C /* ExternalIDRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0019DA4215ADFCE00BE6F9C /* ExternalIDRegistrationViewController.swift */; };
+		A0019DA7215AE15E00BE6F9C /* nwu-mobile-toolbox-dev.pem in Resources */ = {isa = PBXBuildFile; fileRef = A0019DA6215AE15E00BE6F9C /* nwu-mobile-toolbox-dev.pem */; };
+		A0019DAB215AE58600BE6F9C /* PROViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0019DAA215AE58600BE6F9C /* PROViewController.m */; };
+		A009DCCB215C00CC00BF8E14 /* Example_List.json in Resources */ = {isa = PBXBuildFile; fileRef = A009DCB3215C00CC00BF8E14 /* Example_List.json */; };
+		A009DCCD215C24C400BF8E14 /* ExampleNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009DCCC215C24C400BF8E14 /* ExampleNavigator.swift */; };
+		A009DCCF215C2FC900BF8E14 /* ExampleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009DCCE215C2FC900BF8E14 /* ExampleFactory.swift */; };
 		A01E65012157DB6500BFC653 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01E65002157DB6500BFC653 /* HealthKit.framework */; };
 		A04011F221569921006475C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04011F121569921006475C0 /* AppDelegate.swift */; };
-		A04011F421569921006475C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04011F321569921006475C0 /* ViewController.swift */; };
+		A04011F421569921006475C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04011F321569921006475C0 /* MainViewController.swift */; };
 		A04011F721569921006475C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04011F521569921006475C0 /* Main.storyboard */; };
 		A04011F921569922006475C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04011F821569922006475C0 /* Assets.xcassets */; };
 		A04011FC21569922006475C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04011FA21569922006475C0 /* LaunchScreen.storyboard */; };
@@ -181,6 +191,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A0019DA1215AD38900BE6F9C /* IRTFramework.framework in Embed Frameworks */,
 				A0BF2D552157DFD50021EEE3 /* ResearchUI.framework in Embed Frameworks */,
 				A0BF2D622157E01C0021EEE3 /* BridgeApp.framework in Embed Frameworks */,
 				A0BF2D5A2157DFE00021EEE3 /* Research.framework in Embed Frameworks */,
@@ -192,11 +203,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A0019D87215AD37700BE6F9C /* IRTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IRTFramework.framework; path = Sample2/IRTFramework.framework; sourceTree = "<group>"; };
+		A0019DA2215AD43F00BE6F9C /* Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Content; sourceTree = "<group>"; };
+		A0019DA4215ADFCE00BE6F9C /* ExternalIDRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalIDRegistrationViewController.swift; sourceTree = "<group>"; };
+		A0019DA6215AE15E00BE6F9C /* nwu-mobile-toolbox-dev.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "nwu-mobile-toolbox-dev.pem"; sourceTree = SOURCE_ROOT; };
+		A0019DA8215AE58600BE6F9C /* Sample2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sample2-Bridging-Header.h"; sourceTree = "<group>"; };
+		A0019DA9215AE58600BE6F9C /* PROViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROViewController.h; sourceTree = "<group>"; };
+		A0019DAA215AE58600BE6F9C /* PROViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROViewController.m; sourceTree = "<group>"; };
+		A009DCB3215C00CC00BF8E14 /* Example_List.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Example_List.json; sourceTree = "<group>"; };
+		A009DCCC215C24C400BF8E14 /* ExampleNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleNavigator.swift; sourceTree = "<group>"; };
+		A009DCCE215C2FC900BF8E14 /* ExampleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleFactory.swift; sourceTree = "<group>"; };
 		A01E64FE2157DB2600BFC653 /* Sample2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sample2.entitlements; sourceTree = "<group>"; };
 		A01E65002157DB6500BFC653 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		A04011EE21569921006475C0 /* Sample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04011F121569921006475C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A04011F321569921006475C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A04011F321569921006475C0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A04011F621569921006475C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A04011F821569922006475C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04011FB21569922006475C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -214,8 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0BF2D612157E01C0021EEE3 /* BridgeApp.framework in Frameworks */,
+				A0019D9F215AD37700BE6F9C /* IRTFramework.framework in Frameworks */,
 				A01E65012157DB6500BFC653 /* HealthKit.framework in Frameworks */,
 				A0BF2D592157DFE00021EEE3 /* Research.framework in Frameworks */,
+				A0019DA0215AD38900BE6F9C /* IRTFramework.framework in Frameworks */,
 				A0BF2D5D2157E0070021EEE3 /* BridgeSDK.framework in Frameworks */,
 				A0BF2D542157DFD50021EEE3 /* ResearchUI.framework in Frameworks */,
 			);
@@ -227,6 +250,7 @@
 		A01E64FF2157DB6500BFC653 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0019D87215AD37700BE6F9C /* IRTFramework.framework */,
 				A0BF2D472157DE880021EEE3 /* ResearchUI.xcodeproj */,
 				A0BF2D312157DE7D0021EEE3 /* Research.xcodeproj */,
 				A0BF2D172157DE600021EEE3 /* BridgeSDK.xcodeproj */,
@@ -256,14 +280,23 @@
 		A04011F021569921006475C0 /* Sample2 */ = {
 			isa = PBXGroup;
 			children = (
+				A0019DA6215AE15E00BE6F9C /* nwu-mobile-toolbox-dev.pem */,
+				A0019DA2215AD43F00BE6F9C /* Content */,
 				A0BF2D652157E1BD0021EEE3 /* BridgeInfo.plist */,
 				A01E64FE2157DB2600BFC653 /* Sample2.entitlements */,
+				A0019DA4215ADFCE00BE6F9C /* ExternalIDRegistrationViewController.swift */,
 				A04011F121569921006475C0 /* AppDelegate.swift */,
-				A04011F321569921006475C0 /* ViewController.swift */,
+				A04011F321569921006475C0 /* MainViewController.swift */,
 				A04011F521569921006475C0 /* Main.storyboard */,
 				A04011F821569922006475C0 /* Assets.xcassets */,
 				A04011FA21569922006475C0 /* LaunchScreen.storyboard */,
 				A04011FD21569922006475C0 /* Info.plist */,
+				A0019DA9215AE58600BE6F9C /* PROViewController.h */,
+				A0019DAA215AE58600BE6F9C /* PROViewController.m */,
+				A009DCB3215C00CC00BF8E14 /* Example_List.json */,
+				A0019DA8215AE58600BE6F9C /* Sample2-Bridging-Header.h */,
+				A009DCCC215C24C400BF8E14 /* ExampleNavigator.swift */,
+				A009DCCE215C2FC900BF8E14 /* ExampleFactory.swift */,
 			);
 			path = Sample2;
 			sourceTree = "<group>";
@@ -350,6 +383,7 @@
 				TargetAttributes = {
 					A04011ED21569921006475C0 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -535,6 +569,9 @@
 			files = (
 				A04011FC21569922006475C0 /* LaunchScreen.storyboard in Resources */,
 				A04011F921569922006475C0 /* Assets.xcassets in Resources */,
+				A0019DA3215AD43F00BE6F9C /* Content in Resources */,
+				A009DCCB215C00CC00BF8E14 /* Example_List.json in Resources */,
+				A0019DA7215AE15E00BE6F9C /* nwu-mobile-toolbox-dev.pem in Resources */,
 				A04011F721569921006475C0 /* Main.storyboard in Resources */,
 				A0BF2D662157E1BE0021EEE3 /* BridgeInfo.plist in Resources */,
 			);
@@ -547,8 +584,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A04011F421569921006475C0 /* ViewController.swift in Sources */,
+				A04011F421569921006475C0 /* MainViewController.swift in Sources */,
 				A04011F221569921006475C0 /* AppDelegate.swift in Sources */,
+				A0019DAB215AE58600BE6F9C /* PROViewController.m in Sources */,
+				A009DCCF215C2FC900BF8E14 /* ExampleFactory.swift in Sources */,
+				A0019DA5215ADFCE00BE6F9C /* ExternalIDRegistrationViewController.swift in Sources */,
+				A009DCCD215C24C400BF8E14 /* ExampleNavigator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,9 +759,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Sample2/Sample2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXKKPUD3QZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sample2",
+				);
 				INFOPLIST_FILE = Sample2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -728,6 +774,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.mss.www.Sample2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sample2/Sample2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -738,9 +786,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Sample2/Sample2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXKKPUD3QZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sample2",
+				);
 				INFOPLIST_FILE = Sample2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -748,6 +801,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.mss.www.Sample2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sample2/Sample2-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
