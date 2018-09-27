@@ -62,6 +62,34 @@
             </objects>
             <point key="canvasLocation" x="161" y="97"/>
         </scene>
+        <!--Example Button Step View Controller-->
+        <scene sceneID="Lk5-IS-cGC">
+            <objects>
+                <viewController storyboardIdentifier="ExampleButtonStepViewController" id="tva-u1-1py" customClass="ExampleButtonStepViewController" customModule="Sample2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wM9-6H-obm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICW-Tu-rQf">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressed:" destination="tva-u1-1py" eventType="touchUpInside" id="ODN-Hd-ck2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="48G-D0-iAS"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="ICW-Tu-rQf" id="qe2-dn-ZvB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a79-AS-X65" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="463"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="qvL-Dn-7wh">
             <objects>

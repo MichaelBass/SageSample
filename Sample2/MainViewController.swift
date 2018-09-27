@@ -108,6 +108,17 @@ extension MainViewController: RSDTaskViewControllerDelegate {
         self.scheduleManager.taskController(taskController, readyToSave: taskViewModel)
     }
     
+    func taskViewController(_ taskViewController: UIViewController, viewControllerForStep stepModel: RSDStepViewModel) -> UIViewController? {
+        guard stepModel.step.stepType == .exampleButton  else {
+            return nil
+        }
+        
+        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ExampleButtonStepViewController") as? RSDStepViewController
+        viewController?.stepViewModel = stepModel
+        
+        return viewController
+    }
+    
     
 }
 

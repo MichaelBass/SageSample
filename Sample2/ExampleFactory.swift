@@ -21,9 +21,22 @@ class ExampleFactory: SBAFactory {
         }
     }
     
+    override func decodeStep(from decoder: Decoder, with type: RSDStepType) throws -> RSDStep? {
+        switch type {
+        case .exampleButton:
+            return try ExampleButtonStep(from: decoder)
+        default:
+            return try super.decodeStep(from: decoder, with: type)
+        }
+    }
+    
 
 }
 
 extension RSDStepNavigatorType {
     static let example: RSDStepNavigatorType = "example"
+}
+
+extension RSDStepType {
+    static let exampleButton: RSDStepType = "exampleButton"
 }

@@ -17,6 +17,8 @@
 		A009DCCB215C00CC00BF8E14 /* Example_List.json in Resources */ = {isa = PBXBuildFile; fileRef = A009DCB3215C00CC00BF8E14 /* Example_List.json */; };
 		A009DCCD215C24C400BF8E14 /* ExampleNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009DCCC215C24C400BF8E14 /* ExampleNavigator.swift */; };
 		A009DCCF215C2FC900BF8E14 /* ExampleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009DCCE215C2FC900BF8E14 /* ExampleFactory.swift */; };
+		A009DCD1215C4A2A00BF8E14 /* ExampleButtonStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009DCD0215C4A2A00BF8E14 /* ExampleButtonStep.swift */; };
+		A009DCD3215C50FD00BF8E14 /* ExampleButtonStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009DCD2215C50FD00BF8E14 /* ExampleButtonStepViewController.swift */; };
 		A01E65012157DB6500BFC653 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01E65002157DB6500BFC653 /* HealthKit.framework */; };
 		A04011F221569921006475C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04011F121569921006475C0 /* AppDelegate.swift */; };
 		A04011F421569921006475C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04011F321569921006475C0 /* MainViewController.swift */; };
@@ -213,6 +215,8 @@
 		A009DCB3215C00CC00BF8E14 /* Example_List.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Example_List.json; sourceTree = "<group>"; };
 		A009DCCC215C24C400BF8E14 /* ExampleNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleNavigator.swift; sourceTree = "<group>"; };
 		A009DCCE215C2FC900BF8E14 /* ExampleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleFactory.swift; sourceTree = "<group>"; };
+		A009DCD0215C4A2A00BF8E14 /* ExampleButtonStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleButtonStep.swift; sourceTree = "<group>"; };
+		A009DCD2215C50FD00BF8E14 /* ExampleButtonStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleButtonStepViewController.swift; sourceTree = "<group>"; };
 		A01E64FE2157DB2600BFC653 /* Sample2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sample2.entitlements; sourceTree = "<group>"; };
 		A01E65002157DB6500BFC653 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		A04011EE21569921006475C0 /* Sample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -297,6 +301,8 @@
 				A0019DA8215AE58600BE6F9C /* Sample2-Bridging-Header.h */,
 				A009DCCC215C24C400BF8E14 /* ExampleNavigator.swift */,
 				A009DCCE215C2FC900BF8E14 /* ExampleFactory.swift */,
+				A009DCD0215C4A2A00BF8E14 /* ExampleButtonStep.swift */,
+				A009DCD2215C50FD00BF8E14 /* ExampleButtonStepViewController.swift */,
 			);
 			path = Sample2;
 			sourceTree = "<group>";
@@ -585,7 +591,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04011F421569921006475C0 /* MainViewController.swift in Sources */,
+				A009DCD1215C4A2A00BF8E14 /* ExampleButtonStep.swift in Sources */,
 				A04011F221569921006475C0 /* AppDelegate.swift in Sources */,
+				A009DCD3215C50FD00BF8E14 /* ExampleButtonStepViewController.swift in Sources */,
 				A0019DAB215AE58600BE6F9C /* PROViewController.m in Sources */,
 				A009DCCF215C2FC900BF8E14 /* ExampleFactory.swift in Sources */,
 				A0019DA5215ADFCE00BE6F9C /* ExternalIDRegistrationViewController.swift in Sources */,

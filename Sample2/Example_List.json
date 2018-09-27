@@ -73,20 +73,12 @@
         },
         {
             "identifier": "step5",
-            "type": "form",
+            "type": "exampleButton",
             "title": "Step five",
-            "text": "Select a single option",
-            "inputFields" : [{
-                "uiHint": "list",
-                "type": "singleChoice.integer",
-                "choices": [
-                    {"text":"Alfa", "value":0},
-                    {"text":"Bravo", "value":1},
-                    {"text":"Charlie", "value":2},
-                    {"text":"Delta", "value":3},
-                {"text":"Echo", "value":4}],
-                "optional": true
-            }]
+            "text": "Push a button",
+            "buttonCaption": "Push Me"
+            
+            
         }
 
 
